@@ -48,7 +48,7 @@ function App() {
           className="addScore1"
           onClick={() => {
             if (score > 100) {
-              return;
+              return <h1>india wins</h1>;
             }
             scoreChange(1);
           }}
@@ -106,7 +106,8 @@ function App() {
         </button>
       </div>
 
-      {/* If score reaches greater than 100, show text "India Won" without quotes in h1 tag with class name 'status' */}
+      {
+      }    
     </div>
   );
 }
