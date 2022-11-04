@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [score, setscore] = React.useState(76);
+  const [score, setscore] = React.useState();
   const scoreChange = (value) => {
     setscore(score + value);
   };
@@ -69,7 +69,7 @@ function App() {
         <button
           className="addScore6"
           onClick={() => {
-            if (score >100) {
+            if (score > 100) {
               return;
             }
             scoreChange(6);
@@ -84,7 +84,7 @@ function App() {
         {/* Increase the count of wicket */}
         <button
           onClick={() => {
-            if(wicket>=12){
+            if (wicket >= 12) {
               return;
             }
             wicketChange(1);
@@ -106,8 +106,7 @@ function App() {
         </button>
       </div>
 
-      {
-      }    
+      {}
     </div>
   );
 }
