@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [score, setscore] = React.useState();
+  const [score, setscore] = React.useState(20);
   const scoreChange = (value) => {
     setscore(score + value);
   };
